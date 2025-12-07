@@ -1,13 +1,9 @@
 """ even or not """
 def is_even(k):
     """ input """
-    k = abs(k)
-    if k == 0:
+    if k & 1 == 0:
         return True
-    elif k == 1:
-        return False
-    else:
-        return is_even(k-2)
+    return False
 
 print(is_even(int(input())))
 
