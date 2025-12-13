@@ -21,7 +21,7 @@ class ArrayStack:
         if self.size > 0:
             self.size -= 1
             return self.data.pop(-1)
-        print("Underflow: Cannot pop data from an empty list")
+        return print("Underflow: Cannot pop data from an empty list")
     def is_empty(self):
         """ empty or not """
         if self.size <= 0:
