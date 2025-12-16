@@ -31,7 +31,7 @@ class ArrayStack:
         """ get stack top """
         if self.size > 0:
             return self.data[-1]
-        print("Underflow: Cannot get stack top from an empty list")
+        return print("Underflow: Cannot get stack top from an empty list")
     def get_size(self):
         """ get_size """
         return self.size
