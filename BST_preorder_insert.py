@@ -36,7 +36,7 @@ class BST:
             _pre(node.right)
 
         _pre(self.root)
-        print()
+        print(" ")
 
 
 def main():

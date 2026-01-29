@@ -36,5 +36,49 @@ class BST:
             _pre(node.right)
 
         _pre(self.root)
-        print()
+        print(" ")
+    
+    def is_empty(self):
+        return self.root is None
+    
+    def inorder(self):
+        def _in(node):
+            if node is None:
+                return
+            _in(node.left)
+            print(" -> " + str(node.data) ,end="")
+            _in(node.right)
+        _in(self.root)
+        print(" ")
 
+    def postorder(self):
+        def _post(node):
+            if node is None:
+                return
+            
+            _post(node.left)
+            _post(node.right)
+            print(" -> " + str(node.data), end="")
+        _post(self.root)
+        print(" ")
+    def traverse(self):
+        if self.is_empty():
+            print("This is an empty binary search tree.")
+            return
+        
+        print("Preorder:",end="")
+        self.preorder()
+
+        print("Inorder:" , end="")
+        self.inorder()
+
+        print("Postorder:" , end="")
+        self.postorder()
+
+def main():
+    my_bst = BST()
+    for i in range(int(input())):
+        my_bst.insert(int(input()))
+    my_bst.traverse()
+
+main()
