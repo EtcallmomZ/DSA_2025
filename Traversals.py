@@ -38,16 +38,3 @@ class BST:
         _pre(self.root)
         print()
 
-
-def main():
-    bst = BST()
-    n = int(input())
-    i = 0
-    while i < n:
-        bst.insert(int(input()))
-        i += 1
-
-    print("Preorder:", end="")
-    bst.preorder()
-
-main()
