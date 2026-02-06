@@ -1,9 +1,7 @@
-""" summation V1"""
+""" summation V2"""
 def summation(n):
     """ what is it?? """
-    summary = 0
-    for i in range(1,n+1):
-        summary += i
+    
     return summary
 
 print(summation(int(input())))
