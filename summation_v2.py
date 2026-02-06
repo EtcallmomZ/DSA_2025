@@ -1,7 +1,5 @@
 """ summation V2"""
 def summation(n):
-    """ what is it?? """
-    
-    return summary
-
+    """ how to"""
+    return (n* (n + 1)) // 2
 print(summation(int(input())))

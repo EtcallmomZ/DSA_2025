@@ -2,8 +2,9 @@
 def summation(n):
     """ what is it?? """
     summary = 0
-    for i in range(1,n+1):
+    for i in range(n):
         summary += i
+    summary += n
     return summary
 
 print(summation(int(input())))
