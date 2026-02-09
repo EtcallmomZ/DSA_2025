@@ -1,5 +1,4 @@
 import json
-"""  is intersect"""
 def intersect(a,b,c):
     """ true or false """
     return bool(set(a) & set(b) & set(c))
